@@ -1,1 +1,1 @@
-# sukkiri_java
+# js_practice
