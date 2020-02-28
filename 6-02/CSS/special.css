@@ -8,7 +8,19 @@ img {
   max-width: 100px;
 }
 
-/*昨日の実装に必要なCSS*/
+/*機能の実装に必要なCSS*/
+#nav {
+  position: fixed;
+  right: -270px;
+  top: 0;
+  width: 270px;
+  height: 100%;
+}
+
+/*ドロワーが開かれた時のスタイル*/
+.show {
+  transform: translate3d(-270px, 0, 0);
+}
 
 /*ヘッダーにボタンを配置*/
 .header {
@@ -30,5 +42,5 @@ header .container {
 }
 /*装飾的なCSS*/
 #nav {
-  background-color: #bbb;
+  background-color: #ccc;
 }
