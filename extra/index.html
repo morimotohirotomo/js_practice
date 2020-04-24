@@ -17,7 +17,7 @@
 </style>
 </head>
 <body>
-  <div class="box">
+  <div class="box" id="target">
 </div><!-- /.container -->
 <main>
 <div class="container">
@@ -31,5 +31,12 @@
 <p>JavaScript Samples</p>
 </div><!-- /.container -->
 </footer>
+  <script>
+  	'use strict';
+
+  	document.getElementById('target').addEventListener('click', () => {
+  		  document.getElementById('target').style.background = 'pink';
+  	});
+  </script>
 </body>
 </html>
