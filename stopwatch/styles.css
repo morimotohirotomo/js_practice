@@ -38,13 +38,13 @@ body {
 	opacity: 0.6;
 }
 
-@keyframes fadeIn {
-	from {
-		opacity: 0;
+@keyframes anim {
+	0% {
+		transform: translateX(0px);
 	}
 
-	to {
-		opacity: 1;
+	100% {
+		transform: translateX(300px);
 	}
 }
 
@@ -52,8 +52,5 @@ body {
 	width: 100px;
 	height: 100px;
 	background: #00eeaa;
-	animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
+	animation: anim 2s forwards;
 }
