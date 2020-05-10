@@ -44,4 +44,13 @@
 		}
 		document.querySelectorAll('.thumbnails > li')[target].click();
 	});
+
+	const prev = document.getElementById('prev');
+	prev.addEventListener('click', () => {
+		let target = currentIndex - 1;
+		if (target < 0) {
+			target = images.length - 1;
+		}
+		document.querySelectorAll('.thumbnails > li')[target].click();
+	});
 }
