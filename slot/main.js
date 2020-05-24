@@ -46,6 +46,14 @@
 				this.spin();
 			}, 50);
 		}
+
+		isUnmatched(p1, p2) {
+			return this.img.src !== p1.img.src && this.img.src !== p2.img.src;
+		}
+
+		unmatch() {
+			this.img.classList.add('unmatched');
+		}
 	}
 
 	function checkResult() {
